@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santa’s Grotto 2026 | Bishops Hull Hub</title>
+<meta name="description" content="Meet Santa at the Bishops Hull Hub Santa Grotto on Saturday 12th December, 10am–12pm. Book your child’s magical visit!">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Fredoka:wght@400;500;600&display=swap">
+<style>
+:root{--red:#c4122f;--deep:#7a0a1e;--green:#0d6b3a;--dgreen:#07391f;--gold:#ffd56b;--snow:#fffaf2;--night:#0b1a3a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Fredoka',system-ui,sans-serif;color:var(--snow);background:radial-gradient(ellipse at top,#1a2f6b 0,var(--night) 60%,#050b1f 100%) fixed;overflow-x:hidden;line-height:1.5}
+h1,h2,h3{font-family:'Mountains of Christmas',cursive;margin:0;text-shadow:0 3px 0 rgba(0,0,0,.3)}
+#snow{position:fixed;inset:0;pointer-events:none;z-index:50}
+.lights{position:fixed;top:0;left:0;right:0;height:46px;z-index:40;display:flex;justify-content:space-around;pointer-events:none;background:linear-gradient(#0000,#0000)}
+.lights::before{content:"";position:absolute;top:10px;left:0;right:0;height:3px;background:#06240f}
+.lights i{position:relative;top:10px;width:14px;height:22px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%;animation:twinkle 1.6s infinite alternate;box-shadow:0 0 14px 4px currentColor}
+.lights i:nth-child(4n+1){background:#ff3b4e;color:#ff3b4e}.lights i:nth-child(4n+2){background:#ffd56b;color:#ffd56b;animation-delay:.4s}
+.lights i:nth-child(4n+3){background:#3dff8c;color:#3dff8c;animation-delay:.8s}.lights i:nth-child(4n){background:#4db8ff;color:#4db8ff;animation-delay:1.2s}
+@keyframes twinkle{from{opacity:.35;transform:scale(.9)}to{opacity:1;transform:scale(1.05)}}
+.sleigh{position:fixed;top:70px;left:-300px;font-size:3rem;white-space:nowrap;z-index:45;animation:fly 22s linear infinite;pointer-events:none;filter:drop-shadow(0 0 12px #ffd56b)}
+@keyframes fly{0%{transform:translate(0,0) rotate(-4deg)}50%{transform:translate(60vw,40px) rotate(3deg)}100%{transform:translate(115vw,-10px) rotate(-4deg)}}
+header.hero{text-align:center;padding:90px 16px 40px;position:relative}
+.stars{font-size:1.4rem;letter-spacing:.5rem;animation:twinkle 2s infinite alternate}
+h1{font-size:clamp(3rem,11vw,7rem);line-height:1;color:var(--snow);background:linear-gradient(180deg,#fff,#ffd56b 55%,#ff5a6e);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 #5a0714);margin:10px 0}
+.sub{font-size:clamp(1.1rem,3.5vw,1.6rem);color:var(--gold)}
+.santa{font-size:clamp(5rem,20vw,10rem);display:inline-block;animation:bob 2.4s ease-in-out infinite;filter:drop-shadow(0 8px 20px #000a)}
+@keyframes bob{50%{transform:translateY(-14px) rotate(3deg)}}
+.badge{display:inline-block;margin:14px 6px 0;padding:10px 20px;border-radius:999px;background:var(--red);border:3px dashed var(--gold);font-weight:600;box-shadow:0 0 24px #ff3b4e88}
+.countdown{display:flex;gap:12px;justify-content:center;margin:26px 0 8px;flex-wrap:wrap}
+.countdown div{background:linear-gradient(#fff,#ffe9d0);color:var(--deep);min-width:78px;padding:10px 6px;border-radius:14px;border-bottom:5px solid var(--red);box-shadow:0 6px 0 #0004}
+.countdown b{display:block;font-size:2rem;font-family:'Mountains of Christmas'}.countdown span{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+main{max-width:980px;margin:0 auto;padding:0 16px 60px}
+.candy{height:22px;border-radius:12px;background:repeating-linear-gradient(-45deg,var(--red) 0 16px,#fff 16px 32px);margin:30px 0;animation:slide 3s linear infinite;background-size:45px 45px;box-shadow:0 0 18px #ff3b4e88}
+@keyframes slide{to{background-position:45px 0}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:linear-gradient(160deg,var(--green),var(--dgreen));border:3px solid var(--gold);border-radius:22px;padding:20px;text-align:center;box-shadow:0 10px 0 #0005;transition:transform .2s}
+.card:hover{transform:translateY(-6px) rotate(-1deg)}.card .e{font-size:2.6rem}.card h3{color:var(--gold);font-size:1.6rem}.card p{margin:.3rem 0 0}
+.panel{background:linear-gradient(180deg,#fffaf2,#ffe9d0);color:#3a0710;border-radius:28px;padding:clamp(18px,4vw,36px);border:6px solid var(--red);box-shadow:0 0 0 4px var(--gold),0 20px 60px #000a;position:relative}
+.panel::before{content:"🎄";position:absolute;top:-34px;left:50%;transform:translateX(-50%);font-size:3rem}
+.panel h2{color:var(--red);text-align:center;font-size:clamp(2rem,6vw,3rem);text-shadow:none;margin-top:14px}
+.panel h3{color:var(--green);text-shadow:none;font-size:1.7rem;margin:22px 0 8px}
+label{display:block;font-weight:600;font-size:.95rem;margin-bottom:4px}
+input,select{width:100%;padding:12px 14px;font:inherit;border:2px solid #e2b9a8;border-radius:12px;background:#fff;color:#3a0710}
+input:focus,select:focus{outline:3px solid var(--gold);border-color:var(--red)}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.child{background:#fff;border:3px dashed var(--green);border-radius:18px;padding:14px;margin:12px 0;position:relative}
+.child h4{margin:0 0 8px;color:var(--red);font-size:1.15rem}
+.child .row{grid-template-columns:2fr 1fr 1.4fr}
+@media(max-width:560px){.child .row{grid-template-columns:1fr}}
+.remove{position:absolute;top:8px;right:10px;border:0;background:none;font-size:1.3rem;cursor:pointer}
+button.add{width:100%;padding:12px;border-radius:14px;border:3px dashed var(--green);background:#eaffef;color:var(--green);font:inherit;font-weight:600;cursor:pointer}
+button.add:hover{background:#d4ffe0}
+.total{display:flex;justify-content:space-between;align-items:center;font-size:1.4rem;font-weight:600;margin:20px 0 10px;padding:14px 18px;border-radius:14px;background:#fff;border:3px solid var(--gold)}
+button.go{width:100%;font:inherit;font-family:'Mountains of Christmas';font-size:1.9rem;padding:16px;border:0;border-radius:18px;color:#fff;cursor:pointer;background:linear-gradient(var(--red),var(--deep));box-shadow:0 7px 0 #4a0511,0 0 30px #ff3b4e88;animation:pulse 1.8s infinite}
+button.go:active{transform:translateY(5px);box-shadow:0 2px 0 #4a0511}button.go:disabled{opacity:.6;animation:none;cursor:wait}
+@keyframes pulse{50%{transform:scale(1.025)}}
+.err{color:#b00020;font-weight:600;text-align:center;min-height:1.5em;margin-top:10px}
+.note{font-size:.9rem;text-align:center;opacity:.8;margin-top:10px}
+footer{text-align:center;padding:30px 16px 60px;color:var(--gold)}
+.elves{font-size:2rem;letter-spacing:.4rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}#snow,.sleigh{display:none}}
+</style>
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+<div class="lights" id="lights" aria-hidden="true"></div>
+<div class="sleigh" aria-hidden="true">🦌🦌🦌🦌🛷🎅</div>
+
+<header class="hero">
+  <div class="stars" aria-hidden="true">✨ ⭐ ✨ ⭐ ✨</div>
+  <div class="santa" aria-hidden="true">🎅</div>
+  <h1>Santa’s Grotto</h1>
+  <div class="sub">at Bishops Hull Hub ❄️ Ho Ho Ho! ❄️</div>
+  <div>
+    <span class="badge">📅 Saturday 12th December</span>
+    <span class="badge">🕙 10am – 12pm</span>
+    <span class="badge">🎁 Arrive before 11 to see Santa!</span>
+  </div>
+  <div class="countdown" id="countdown" aria-label="Countdown to the Grotto"></div>
+  <p class="sub">sleeps until the magic begins! 🌟</p>
+</header>
+
+<main>
+  <div class="candy" aria-hidden="true"></div>
+  <section class="cards" aria-label="What to expect">
+    <div class="card"><div class="e">🎅</div><h3>Meet Santa</h3><p>A magical one-to-one chat with the big man himself.</p></div>
+    <div class="card"><div class="e">🦌</div><h3>Reindeer Magic</h3><p>Rudolph and friends are parked up out the back!</p></div>
+    <div class="card"><div class="e">🎄</div><h3>Winter Wonderland</h3><p>Twinkling lights, snowy scenes and festive surprises.</p></div>
+    <div class="card"><div class="e">🎁</div><h3>A Gift from Santa</h3><p>Every child leaves with a little something from the grotto.</p></div>
+  </section>
+  <div class="candy" aria-hidden="true"></div>
+
+  <section class="panel" id="book">
+    <h2>🎟️ Book Your Visit to Santa 🎟️</h2>
+    <p style="text-align:center">One ticket per child. Fill in the details and we’ll send you to Stripe to pay safely.</p>
+    <form id="form" novalidate>
+      <h3>🧑‍🎄 Grown-up details</h3>
+      <div class="row">
+        <div><label for="pname">Your name</label><input id="pname" autocomplete="name" required></div>
+        <div><label for="pemail">Email</label><input id="pemail" type="email" autocomplete="email" required></div>
+        <div><label for="pphone">Phone</label><input id="pphone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <h3>🧒 Little ones visiting Santa</h3>
+      <div id="children"></div>
+      <button type="button" class="add" id="add">➕ Add another child</button>
+      <div class="total"><span>🎁 Total</span><span id="total">£0.00</span></div>
+      <button class="go" id="submit" type="submit">🎅 Pay &amp; Book with Stripe 🎅</button>
+      <div class="err" id="err" role="alert"></div>
+      <p class="note">🔒 Secure payment by Stripe. Arrive before 11am so Santa can see everyone!</p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="elves" aria-hidden="true">🧝 🎄 ⛄ 🎁 🔔 🍪 🥛 🧝‍♀️</div>
+  <p>Bishops Hull Hub · Merry Christmas from all of us! 🎄</p>
+</footer>
+
+<script>
+(function(){
+  // Twinkling lights
+  var L=document.getElementById('lights');
+  for(var i=0;i<Math.ceil(innerWidth/38);i++)L.appendChild(document.createElement('i'));
+
+  // Countdown (Saturday 12 Dec 2026, 10:00 UK time = GMT)
+  var target=new Date('2026-12-12T10:00:00Z'),cd=document.getElementById('countdown');
+  function tick(){
+    var d=Math.max(0,target-Date.now()),s=Math.floor(d/1000);
+    var v=[['Days',Math.floor(s/86400)],['Hours',Math.floor(s%86400/3600)],['Mins',Math.floor(s%3600/60)],['Secs',s%60]];
+    cd.innerHTML=v.map(function(x){return '<div><b>'+x[1]+'</b><span>'+x[0]+'</span></div>'}).join('');
+  }
+  tick();setInterval(tick,1000);
+
+  // Snow
+  var c=document.getElementById('snow'),x=c.getContext('2d'),f=[];
+  function size(){c.width=innerWidth;c.height=innerHeight}size();addEventListener('resize',size);
+  for(var i=0;i<140;i++)f.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:1+Math.random()*4,s:.5+Math.random()*1.5,d:Math.random()*6});
+  var t=0;(function snow(){
+    x.clearRect(0,0,c.width,c.height);x.fillStyle='rgba(255,255,255,.9)';t+=.01;
+    f.forEach(function(p){p.y+=p.s;p.x+=Math.sin(t+p.d)*.6;if(p.y>c.height){p.y=-5;p.x=Math.random()*c.width}
+      x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()});
+    requestAnimationFrame(snow);
+  })();
+
+  // Form
+  var price=500,max=6,kids=document.getElementById('children'),err=document.getElementById('err');
+  function money(p){return '£'+(p/100).toFixed(2)}
+  function update(){
+    var n=kids.children.length;
+    document.getElementById('total').textContent=n+' × '+money(price)+' = '+money(n*price);
+    document.getElementById('add').style.display=n>=max?'none':'';
+    [].forEach.call(kids.children,function(k,i){
+      k.querySelector('h4').textContent='🎁 Child '+(i+1);
+      k.querySelector('.remove').style.display=n>1?'':'none';
+    });
+  }
+  function addChild(){
+    if(kids.children.length>=max)return;
+    var d=document.createElement('div');d.className='child';
+    d.innerHTML='<button type="button" class="remove" aria-label="Remove child">❌</button><h4></h4>'+
+    '<div class="row"><div><label>Child’s name</label><input class="cn" required></div>'+
+    '<div><label>Age</label><input class="ca" type="number" min="0" max="17" inputmode="numeric" required></div>'+
+    '<div><label>Gender</label><select class="cg" required><option value="">Choose…</option><option>Girl</option><option>Boy</option><option>Prefer not to say</option></select></div></div>';
+    d.querySelector('.remove').onclick=function(){d.remove();update()};
+    kids.appendChild(d);update();
+  }
+  document.getElementById('add').onclick=addChild;addChild();
+  fetch('/api/config').then(function(r){return r.json()}).then(function(j){price=j.pricePence;max=j.maxChildren;update()}).catch(function(){});
+
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();err.textContent='';
+    var body={parent:{name:pname.value,email:pemail.value,phone:pphone.value},children:[].map.call(kids.children,function(k){
+      return {name:k.querySelector('.cn').value,age:k.querySelector('.ca').value,gender:k.querySelector('.cg').value}})};
+    var btn=document.getElementById('submit');btn.disabled=true;btn.textContent='🎄 Wrapping your tickets…';
+    fetch('/api/checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})})
+      .then(function(o){if(o.ok&&o.j.url){location.href=o.j.url}else throw new Error(o.j.error||'Something went wrong.')})
+      .catch(function(ex){err.textContent='🎅 '+ex.message;btn.disabled=false;btn.textContent='🎅 Pay & Book with Stripe 🎅'});
+  });
+})();
+</script>
+</body>
+</html>
